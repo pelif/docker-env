@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+    php72:
+        image: php:7.2-apache
+        container_name: php72
+        restart: always
+        ports:
+          - '8004:80'
+        volumes:
+          - /home/felipe/Docker/php72/src:/var/www/html
+volumes:
+    src:
